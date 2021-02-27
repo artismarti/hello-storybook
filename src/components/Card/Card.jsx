@@ -1,9 +1,9 @@
-import React from "react";
-import { Text, Title, SubTitle } from "../Typography";
-import Button from "../Button/Button";
-import PropTypes from "prop-types";
+import React from 'react';
+import { Text, Title, SubTitle } from '../Typography';
+import Button from '../Button/Button';
+import PropTypes from 'prop-types';
 
-import "./Card.css";
+import './Card.css';
 
 const Card = ({
   children,
@@ -50,12 +50,12 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  backgroundColor: "white",
-  image: "http://link.to/an/image",
-  alt: "this is an image",
-  title: "Title goes here",
-  subtitle: "Subtitle here",
-  text: "I am text",
-  button1Label: "Button 1 label",
-  button2Label: "Button 2 label",
+  backgroundColor: 'white',
+  image: 'http://link.to/an/image',
+  alt: 'this is an image',
+  title: 'Title goes here',
+  subtitle: 'Subtitle here',
+  text: 'I am text',
+  button1Label: 'Button 1 label',
+  button2Label: 'Button 2 label',
 };

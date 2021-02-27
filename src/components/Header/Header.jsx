@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Button from "../Button/Button";
-import Logo from "../Logo/Logo";
-import "./Header.css";
+import Button from '../Button/Button';
+import Logo from '../Logo/Logo';
+import './Header.css';
 
-import { Title } from "../Typography/index";
+import { Title } from '../Typography/index';
 
 export const Header = ({
   user,
