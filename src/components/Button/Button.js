@@ -77,8 +77,8 @@ export default Button;
 
 Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  variant: PropTypes.oneOf(['primary', 'secondary', 'ghost']),
-  children: PropTypes.element.isRequired,
+  variant: PropTypes.oneOf(['primary', 'danger', 'ghost']),
+  children: PropTypes.string.isRequired,
 };
 
 Button.defaultProps = {
