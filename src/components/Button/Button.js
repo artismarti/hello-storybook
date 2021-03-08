@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 const getVariant = (variant) => {
-  console.log({ variant });
   switch (variant) {
     case 'primary':
       return primary;
@@ -16,7 +15,6 @@ const getVariant = (variant) => {
   }
 };
 const getSize = (size) => {
-  console.log({ size });
   switch (size) {
     case 'small':
       return small;
@@ -64,31 +62,32 @@ const ButtonBase = styled.button`
   ${(props) => getVariant(props.variant)}
   ${(props) => getSize(props.size)}
 `;
-const Button = ({ variant, size, children, backgroundColor }) => {
+const Button = ({ variant, size, label, backgroundColor }) => {
   return (
     <ButtonBase
       variant={variant}
       size={size}
       style={backgroundColor && { backgroundColor }}
     >
-      {children}
+      {label}
     </ButtonBase>
   );
 };
 
 export default Button;
 
+
 Button.propTypes = {
   backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   variant: PropTypes.oneOf(['primary', 'danger', 'ghost']),
-  children: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
+
 
 Button.defaultProps = {
   backgroundColor: null,
   variant: 'primary',
   size: 'medium',
-  children: 'Button Label',
+  label: 'Button Label',
 };
-
