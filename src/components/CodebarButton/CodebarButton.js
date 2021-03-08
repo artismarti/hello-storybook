@@ -89,22 +89,3 @@ CodebarButton.defaultProps = {
   size: 'medium',
   label: 'Button Label',
 };
-
-// Button.propTypes = {
-//   /**
-//    * Override theme bgcolor
-//    **/
-//   backgroundColor: PropTypes.string,
-//   /**
-//    * Allowed sizes
-//    **/
-//   size: PropTypes.oneOf(['small', 'medium', 'large']),
-//   /**
-//   * Theme buttons
-//   **/
-//   variant: PropTypes.oneOf(['primary', 'danger', 'ghost']),
-//     /**
-//    * Button label
-//    **/
-//   label: PropTypes.string.isRequired,
-// };
