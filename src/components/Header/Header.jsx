@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CodebarButton from '../Button/CodebarButton';
+import CodebarButton from '../CodebarButton/CodebarButton';
 import Logo from '../Logo/Logo';
 import './Header.css';
 

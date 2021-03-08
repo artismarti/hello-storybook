@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Title, SubTitle } from '../Typography';
-import CodebarButton from '../Button/CodebarButton';
+import CodebarButton from '../CodebarButton/CodebarButton';
 import PropTypes from 'prop-types';
 
 import './Card.css';
