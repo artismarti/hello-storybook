@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../Button/Button';
+import CodebarButton from '../Button/CodebarButton';
 import Logo from '../Logo/Logo';
 import './Header.css';
 
@@ -19,15 +19,19 @@ export const Header = ({
       <Logo />
       <h2>{header}</h2>
       {user ? (
-        <Button size="small" onClick={onLogout}>
-          Log out
-        </Button>
+        <CodebarButton
+          size="small"
+          onClick={onLogout}
+          label="Sign Out"
+        ></CodebarButton>
       ) : (
         <>
-          <Button onClick={onLogin}>Log in</Button>
-          <Button variant="ghost" onClick={onCreateAccount}>
-            Sign up
-          </Button>
+          <CodebarButton onClick={onLogin} label="Sign In"></CodebarButton>
+          <CodebarButton
+            variant="ghost"
+            onClick={onCreateAccount}
+            label="Sign Up"
+          ></CodebarButton>
         </>
       )}
     </div>

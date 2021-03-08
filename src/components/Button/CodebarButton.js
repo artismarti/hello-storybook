@@ -62,7 +62,7 @@ const ButtonBase = styled.button`
   ${(props) => getVariant(props.variant)}
   ${(props) => getSize(props.size)}
 `;
-const Button = ({ variant, size, label, backgroundColor }) => {
+const CodebarButton = ({ variant, size, label, backgroundColor }) => {
   return (
     <ButtonBase
       variant={variant}
@@ -74,20 +74,37 @@ const Button = ({ variant, size, label, backgroundColor }) => {
   );
 };
 
-export default Button;
+export default CodebarButton;
 
-
-Button.propTypes = {
+CodebarButton.propTypes = {
   backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   variant: PropTypes.oneOf(['primary', 'danger', 'ghost']),
   label: PropTypes.string.isRequired,
 };
 
-
-Button.defaultProps = {
+CodebarButton.defaultProps = {
   backgroundColor: null,
   variant: 'primary',
   size: 'medium',
   label: 'Button Label',
 };
+
+// Button.propTypes = {
+//   /**
+//    * Override theme bgcolor
+//    **/
+//   backgroundColor: PropTypes.string,
+//   /**
+//    * Allowed sizes
+//    **/
+//   size: PropTypes.oneOf(['small', 'medium', 'large']),
+//   /**
+//   * Theme buttons
+//   **/
+//   variant: PropTypes.oneOf(['primary', 'danger', 'ghost']),
+//     /**
+//    * Button label
+//    **/
+//   label: PropTypes.string.isRequired,
+// };
