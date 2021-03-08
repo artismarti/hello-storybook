@@ -64,10 +64,13 @@ const ButtonBase = styled.button`
   ${(props) => getVariant(props.variant)}
   ${(props) => getSize(props.size)}
 `;
-const Button = ({ variant, size, children }) => {
-  /* console.log({ variant }); */
+const Button = ({ variant, size, children, backgroundColor }) => {
   return (
-    <ButtonBase variant={variant} size={size}>
+    <ButtonBase
+      variant={variant}
+      size={size}
+      style={backgroundColor && { backgroundColor }}
+    >
       {children}
     </ButtonBase>
   );
@@ -76,13 +79,16 @@ const Button = ({ variant, size, children }) => {
 export default Button;
 
 Button.propTypes = {
+  backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   variant: PropTypes.oneOf(['primary', 'danger', 'ghost']),
   children: PropTypes.string.isRequired,
 };
 
 Button.defaultProps = {
+  backgroundColor: null,
   variant: 'primary',
   size: 'medium',
   children: 'Button Label',
 };
+
