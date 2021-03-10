@@ -67,7 +67,9 @@ const CodebarButton = ({ variant, size, label, backgroundColor }) => {
     <ButtonBase
       variant={variant}
       size={size}
-      style={backgroundColor && { backgroundColor }}
+      style={{
+        backgroundColor: backgroundColor && backgroundColor,
+      }}
     >
       {label}
     </ButtonBase>
