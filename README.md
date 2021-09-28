@@ -1,6 +1,6 @@
 # Starter files for Codebar Storybook Workshop
 
-## GET THIS APP RUNNING LOCALLY:
+## GET THIS APP RUNNING LOCALLY, YO!:
 
 1. Clone the app:
   `git clone git@github.com:artismarti/hello-storybook.git`
